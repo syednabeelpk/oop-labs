@@ -170,13 +170,57 @@ public class Lab4 { //Code needs to be changed
     }
     public static void question6(){
         System.out.println("Enter a three digit number:");
-        int no,digit1,digit2,digit3,sum;
-        no=in.nextInt();
-        digit1=no/100;
-        digit2=no/10%10;
-        digit3=no%10;
-        sum=digit1+digit2+digit3;
-        System.out.printf("%d+%d+%d=%d",digit1,digit2,digit3,sum);
+        int i=1;
+        do{
+            System.out.println("2x"+i+"="+(2*i));
+            i++;
+        }while(i<=10);{
+        System.out.println("Program Ccompleted");
+        }
+    }
+    
+    public static void question7(){
+        for(int i=1;i<=10;i++){
+            int j=1;
+            while(j<=10){
+                System.out.print("*");
+                j++;
+            }
+            System.out.println("");
+        }
+    }
+    
+    public static void question8(){
+        int j=1,k=1;
+        for(int i=1;i<=10;i+=2){
+            System.out.println("For Loop:"+i);
+        }
+        while(j<=10){
+            System.out.println("While Loop:"+j);
+            j+=2;
+        }
+        do{
+            System.out.println("Do-While Loop:"+k);
+            k+=2;
+        }while(k<=10);{
+        System.out.println("Program Complete!");
+    }
+    }
+    
+    public static void question9(){
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j < n; j++) System.out.print(" ");
+            for (int j = 1; j <= (2 * i - 1); j++) System.out.print("*");
+            System.out.println();
+        }
+
+        for (int i = n - 1; i >= 1; i--) {
+            for (int j = n; j > i; j--) System.out.print(" ");
+            for (int j = 1; j <= (2 * i - 1); j++) System.out.print("*");
+            System.out.println();
+        }
     }
     
     public static void main(String[] args){
